@@ -1,0 +1,80 @@
+
+<!-- CSS Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- JavaScript Bootstrap (optionnel, mais nécessaire pour certains composants) -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+<header class="header">
+    <nav class="header__top-nav">
+      <ul class="header__list1">
+
+        <!--Logo-->
+
+         <li class="header__i"><img src="./assets/images/Logo_ENICarthage.jpg" alt="ENIC Logo" style="width: 5cm; height: 2cm;" /></li>
+
+        <!-- App Search-->
+
+         <li class="header__i">
+            <input type="text" class="form-control" placeholder="Rechercher" autocomplete="off" id="search-options" value="">
+         </li>
+
+        <!--Langue-->
+
+        <li class="header__i">
+          <select class="form-select" aria-label="Francais">
+              <option selected>Francais </option>
+              <option value="2">Anglais</option>
+              <option value="3">Arabe</option>
+
+          </select>
+      </li>
+
+
+       <!--Espace Extranet-->
+
+          <li class="header__i d-flex align-items-center"><a href="#" routerLink="/api/login"  >
+             <button type="button" class="btn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <img src="./assets/images/user.icon.png" style="width: 1cm; height: 1cm;" alt="User" class="me-2">
+               <span class="fw-bold">Espace Extranet</span>
+              </button>
+            </a>
+          </li>
+
+
+      </ul>
+    </nav>
+    <nav class="header__bottom-nav">
+      <ul class="header__list">
+        <li class="header__item"><a href="#" class="header__link">Nouveautés</a></li>
+        <li class="header__item"><a href="#" class="header__link">Départements</a></li>
+        <li class="header__item"><a href="#" class="header__link">Formations</a></li>
+        <li class="header__item"><a href="#" class="header__link" routerLink="/cours">Cours</a></li>
+        <li class="header__item"><a href="#" class="header__link">Vie Estudiantine</a></li>
+        <li class="header__item"><a href="#" class="header__link">Recherche</a></li>
+        <li class="header__item"><a href="#" class="header__link">Stages</a></li>
+        <li class="header__item"><a href="#" class="header__link"routerLink="/feedback">Feedback</a></li>
+        <li class="header__item"><a href="#" class="header__link">A propos</a></li>
+
+      </ul>
+
+    </nav>
+
+    <img src="../../assets/images/graduation.jpg" alt="Apropos" style="width: 38.37cm; height: 10cm;" />
+
+  </header>
+  <main>
+    <section id="nouveautes">
+        <h2>Nouveautés</h2>
+    </section>
+
+  </main>
+
+  <div class="footer-content">
+    <div class="footer__i"><img src="../../assets/images/footer.png" alt="Apropos" style="width: 38.37cm; height: 10cm;" /></div>
+  <footer>
+    <p>             &copy; 2024 ENICarthage. All rights reserved.</p>
+  </footer>
+  </div>

@@ -1,0 +1,72 @@
+<div class="container">
+    <h3 class="text-center " style="color: rgb(48, 48, 244);">Mon compte</h3>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <label for="cin">Entrez votre CIN :</label>
+        <div class="input-group">
+          <!-- Champ de saisie du CIN -->
+          <input type="text" id="cin" class="form-control" placeholder="Entrez le CIN de l'étudiant" [(ngModel)]="cin" (input)="onCinChange()">
+          <!-- Bouton "Envoyer" devant le champ de saisie -->
+          <div class="input-group-append">
+            <button type="button" class="btn btn-primary" (click)="getEtudiantByCin()">Envoyer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container custom-item">
+    <div class="row">
+      <div class="col">
+        <hr> <!-- Ligne horizontale -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div>
+            <h5 for="numTel">Numéro de téléphone :</h5>
+            <p>{{ etudiant.numTel }}</p> <!-- Affichage du numéro de téléphone de l'étudiant -->
+          </div>
+          <button type="button" class="btn btn-info" (click)="modifierNumTel()">Modifier</button>
+        </div>
+        <!-- Champ de saisie pour le nouveau numéro de téléphone -->
+        <input type="text" id="numTel" class="form-control" placeholder="Entrez votre nouveau numéro de téléphone" [(ngModel)]="nouveauNumTel">
+      </div>
+    </div>
+  </div>
+  
+  <div class="container custom-item">
+    <div class="row">
+      <div class="col">
+        <hr> <!-- Ligne horizontale -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div>
+            <h5 for="email">Votre adresse email :</h5>
+            <p>{{ etudiant.email }}</p> <!-- Affichage de l'email de l'étudiant -->
+          </div>
+          <button type="button" class="btn btn-info" (click)="modifierEmail()">Modifier</button>
+        </div>
+        <!-- Champ de saisie pour le nouvel email -->
+        <input type="text" id="email" class="form-control" placeholder="Entrez votre nouvel email" [(ngModel)]="nouvelEmail">
+      </div>
+    </div>
+  </div>
+  
+  <div class="container custom-item">
+    <div class="row">
+      <div class="col">
+        <hr> <!-- Ligne horizontale -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <div>
+            <h5 for="adresse">Votre adresse :</h5>
+            <p>{{ etudiant.adresse }}</p> <!-- Affichage de l'adresse de l'étudiant -->
+          </div>
+          <button type="button" class="btn btn-info" (click)="modifierAdresse()">Modifier</button>
+        </div>
+        <!-- Champ de saisie pour la nouvelle adresse -->
+        <input type="text" id="adresse" class="form-control" placeholder="Entrez votre nouvelle adresse" [(ngModel)]="nouvelleAdresse">
+      </div>
+    </div>
+  </div>

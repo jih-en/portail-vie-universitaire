@@ -1,0 +1,51 @@
+<img src="./assets/images/R.jpeg" style=" position: absolute; top: 0.1 ; left: 10px; width: 180px; height: auto;">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+     
+    <div class="container">
+        <div class="row justify-content-center">
+         
+                
+            </div>
+            <div class="col-md-4 card2">
+                <h1 class="text-center mb-4"> Espace Etudiant</h1>
+              <form (submit)="userLogin()">
+                   
+                    <div class="form-group">
+                        <label for="Email" >Email</label>
+                        <input type="email" class="form-control"id="email"
+                        [(ngModel)]="logi.email" name="email"  aria-describedby="emailHelp"
+                            placeholder="E-mail institutionnel">
+                       
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Password">Mot de passe</label>
+                        <input type="password"[(ngModel)]="logi.password" name="password" required
+                        class="form-control" id="password" placeholder="Enter Password">
+                    </div>
+
+                    
+                    <div class="form-group mt-3 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+
+               
+                </form>
+              
+            </div>
+
+
+            <footer class="footer">
+                <div class="container">
+                    <p>  Enicarthage vous adresse ses vœux de réussite les plus sincères pour chaque étape de votre parcours académique et professionnel.</p>
+                </div>
+            </footer>
+            
+            
+        </div>
+ 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

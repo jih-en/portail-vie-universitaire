@@ -1,0 +1,169 @@
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        font-size: 20px;
+        color: black;
+    }
+
+    .image-container {
+        position: relative;
+    }
+
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .select-profile-picture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .profile-sidebar {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        padding: 15px;
+    }
+
+    .profile-content {
+        background-color: white;
+        padding: 20px;
+    }
+
+    .table-header:hover {
+        background-color: rgb(255, 170, 80);
+    }
+</style>
+<div>
+  <app-navbar></app-navbar>
+</div>
+<div class="container">
+    <div class="row profile">
+        <div class="col-md-3">
+            <div class="profile-sidebar">
+                <div class="profile-usermenu">
+                   
+                </div>
+              <div class="image-container">
+                    <img class="image" [src]="imageUrl ? imageUrl : 'https://www.w3schools.com/howto/img_avatar.png'" (click)="onSelectFile" [style.width.px]="180" [style.height.px]="200">
+                    <input type="file" (change)="onSelectFile($event)" class="select-profile-picture">
+                    <span class="message">Tap here to select your picture</span>
+                    
+                </div>
+                <br>
+                
+        </div>
+        <div class="profile-usertitle-name">
+          Nom:{{etudiant.nom}}
+        </div>
+        <br>
+        <div class="profile-usertitle-job">
+          Prénom: {{etudiant.prenom}}
+        </div>
+        <br>
+        <div class="profile-usertitle-job">
+          Email:{{etudiant.email}}
+        </div>
+        <br>
+        <div class="profile-usertitle-job">
+          Adress:{{etudiant.adresse}}
+        </div>
+        <br>
+        <div class="profile-usertitle-job">
+          Level:{{etudiant.level}}
+        </div>
+
+    </div>
+        <div class="col-md-9">
+            <div ng-app="myApp" class="profile-content">
+                <h3 class="well">Consultation des notes</h3>
+
+                <div class="card-body px-0 pb-2">
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                      <div class="input-group input-group-outline">
+                        <label class="form-label">Type here...</label>
+                        <input type="text" (keyup)="doFilter($event)" class="form-control">
+                      </div>
+                    </div>
+                
+                <div class="table-responsive p-0" style="overflow: auto; max-height: 400px;"> <!-- Apply overflow and max-height -->
+                    <table class="table align-items-center mb-0">
+                    <thead>
+                      <tr>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Matiére</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">DS</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">TP</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Projet</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Examen</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Remarque</th>
+                        <th class="text-secondary opacity-7"></th>
+                       
+                      </tr>
+                    </thead>
+                   <tbody>
+                       <tr *ngFor="let e of filteredNotes">
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">{{e.matiere}}</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                            <div class="d-flex px-2 py-1">
+                              <div class="d-flex flex-column justify-content-center">
+                                <h6 class="mb-0 text-sm">{{e.noteDs}}</h6>
+                              </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex px-2 py-1">
+                              <div class="d-flex flex-column justify-content-center">
+                                <h6 class="mb-0 text-sm">{{e.noteTp}}</h6>
+                              </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex px-2 py-1">
+                              <div class="d-flex flex-column justify-content-center">
+                                <h6 class="mb-0 text-sm">{{e.notePrj}}</h6>
+                              </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex px-2 py-1">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <h6 class="mb-0 text-sm">{{e.noteExamen}}</h6>
+                                </div>
+                              </div>
+                        </td>
+                        <td>
+                            <div class="d-flex px-2 py-1">
+                                <div class="d-flex flex-column justify-content-center">
+                                  <h6 class="mb-0 text-sm">{{e.remarque}}</h6>
+                                </div>
+                              </div>
+                        </td>
+                      
+                      </tr> 
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+ </div>
+

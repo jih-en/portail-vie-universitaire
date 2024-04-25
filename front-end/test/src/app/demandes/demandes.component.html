@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="container container-form">
+                <h4 class="text-info">Demande de certificat de présence</h4>
+                <form class="row g-3" (ngSubmit)="envoyerDemandeCertificat()">
+                    <div class="mb-3">
+                        <label for="emailCertificatPresence" class="form-label">Adresse Email</label>
+                        <input type="email" class="form-control" id="emailCertificatPresence" placeholder="name@example.com" [(ngModel)]="emailCertificatPresence" name="emailCertificatPresence">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cinCertificatPresence" class="form-label">CIN</label>
+                        <input type="number" class="form-control" id="cinCertificatPresence" placeholder="votre cin" [(ngModel)]="cinCertificatPresence" name="cinCertificatPresence">
+                    </div>
+                    <div class="mb-3">
+                        <label for="raisonCertificatPresence" class="form-label">Expliquer votre nécessité à cette demande</label>
+                        <textarea class="form-control" id="raisonCertificatPresence" rows="3" [(ngModel)]="raisonCertificatPresence" name="raisonCertificatPresence"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="anneeCertificatPresence" class="form-label">Année Académique</label>
+                        <input type="text" class="form-control" id="anneeCertificatPresence" placeholder="Année Académique" [(ngModel)]="anneeCertificatPresence" name="anneeCertificatPresence">
+                    </div>
+                    
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-info ">Envoi Demande de certificat de présence</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container container-form">
+                <h4 class="text-info">Demande de relevé</h4>
+                <form class="row g-3" (ngSubmit)="envoyerDemandeReleve()">
+                    <div class="mb-3">
+                        <label for="emailDemandeReleve" class="form-label">Adresse Email</label>
+                        <input type="email" class="form-control" id="emailDemandeReleve" placeholder="name@example.com" [(ngModel)]="emailDemandeReleve" name="emailDemandeReleve">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cinDemandeReleve" class="form-label">CIN</label>
+                        <input type="number" class="form-control" id="cinDemandeReleve" placeholder="votre cin" [(ngModel)]="cinDemandeReleve" name="cinDemandeReleve">
+                    </div>
+                    <div class="mb-3">
+                        <label for="raisonDemandeReleve" class="form-label">Expliquer votre nécessité à cette demande</label>
+                        <textarea class="form-control" id="raisonDemandeReleve" rows="3" [(ngModel)]="raisonDemandeReleve" name="raisonDemandeReleve"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="anneeDemandeReleve" class="form-label">Année Académique</label>
+                        <input type="text" class="form-control" id="anneeDemandeReleve" placeholder="Année Académique" [(ngModel)]="anneeDemandeReleve" name="anneeDemandeReleve">
+                    </div>
+                    
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-info ">Envoi Demande de relevé</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <app-footer></app-footer>
+  </div>
+  
+  

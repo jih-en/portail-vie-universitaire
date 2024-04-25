@@ -1,0 +1,24 @@
+<mat-dialog-content class="dialog-content">
+    <h1 class="dialog-title">EDIT course</h1>
+    <form>
+        <mat-form-field class="form-input">
+          <mat-label>COURSE NAME</mat-label>
+          <input matInput type="text" [(ngModel)]="data.name" required >
+        </mat-form-field>
+  
+        <mat-form-field class="form-input">
+          <mat-label>Description course</mat-label>
+          <input matInput type="text" [(ngModel)]="data.descrip" required >
+        </mat-form-field>
+  
+        <mat-form-field class="form-input">
+          <mat-label>Creator course</mat-label>
+          <input matInput type="text" [(ngModel)]="data.createur" required >
+        </mat-form-field>
+    </form>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial (click)="edit()">EDIT</button>
+  </mat-dialog-actions>
+  

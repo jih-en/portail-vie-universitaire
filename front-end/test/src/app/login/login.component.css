@@ -1,0 +1,41 @@
+.container .card1 {
+    position: absolute;
+    top: 50%; /* Positionne le haut de l'élément au milieu de la page */
+    left: 50%; /* Positionne la gauche de l'élément au milieu de la page */
+    transform: translate(-50%, -50%); /* Déplace l'élément de moitié de sa propre largeur et hauteur vers le haut et la gauche */
+    width: 180px;
+    height: auto;
+}
+
+.container .card2 {
+    margin: 0 auto; /* Centre horizontalement */
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.position-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    height: 100vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: rgb(14, 14, 14);
+    background-color: beige; /* Ajoutez une couleur de fond */
+}
+
+.app-container {
+    background-color: beige;
+}

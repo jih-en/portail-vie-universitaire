@@ -1,0 +1,139 @@
+
+
+/* Styles pour le nav du haut */
+.header__top-nav {
+    background-color: #f2f2f2; /* Fond gris clair */
+    padding: 1px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    margin-bottom: 15px; /* Espace entre les deux nav */
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  /* Styles pour le nav du bas */
+  .header__bottom-nav {
+    background-color: #f2f2f2; /* Fond gris clair */
+    padding: 15px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+  }
+  
+  /* Styles pour la liste d'items */
+  .header__list {
+    list-style-type: none; /* Supprimer les puces */
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Styles pour les éléments de la liste */
+  .header__item {
+    display: inline; /* Affichage en ligne pour les éléments */
+    margin-right: 70px; /* Espacement entre les éléments */
+  }
+  
+  /* Styles pour les liens */
+  .header__link {
+    text-decoration: none; /* Supprimer les soulignements */
+    color: #333; /* Couleur du texte */
+    font-weight: bold; /* Police en gras */
+  }
+  
+  /* Style pour le logo */
+  .header__i img {
+    width: 6cm; /* Largeur du logo */
+    height: 2cm; /* Hauteur du logo */
+  }
+
+  .header__i{
+    display: inline; /* Affichage en ligne pour les éléments */
+    margin-right: 200px; /* Espacement entre les éléments */
+    
+  }
+  
+
+  /* Styles pour la liste d'items du nav du haut */
+  .header__list1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Styles pour le main */
+  main {
+    padding: 20px;
+  }
+  
+  /* Styles pour les sections */
+  section {
+    margin-bottom: 20px;
+  }
+  
+  .footer-content {
+    background-color:  #032130; /* Couleur de fond bleu marine */
+    color: white; /* Couleur du texte blanc */
+    text-align: center; /* Alignement du texte au centre */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 0; /* Espace entre les deux nav */
+  }
+  
+
+
+
+  .header__i .btn {
+    background-color: transparent;
+    border: 1px solid transparent; /* Ajoute une bordure fine transparente */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Empêche le retour à la ligne du texte */
+    padding: 0.5rem 1rem; /* Ajoute un espacement intérieur au bouton */
+    
+}
+
+
+.header__i .btn img {
+    width: 1.5cm;
+    height: 1.5cm;
+    margin-right: 0.5rem; /* Ajoute un espace entre l'image et le texte */
+    
+}
+
+
+
+.header__i .form-select {
+  width: 100%; /* Définit la largeur du select sur 100% */
+  padding: 0.35rem 1rem; /* Ajoute un padding pour l'apparence du select */
+  font-size: 1rem; /* Taille de police */
+  line-height: 2; /* Hauteur de ligne */
+  color: #212529; /* Couleur du texte */
+  background-color: #fff; /* Couleur de fond */
+  border: 2px solid #ced4da; /* Bordure */
+  border-radius: 0.25rem; /* Bordure arrondie */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transition pour la bordure */
+  margin-right: 1rem;
+}
+
+.header__i .form-select:focus {
+  border-color: #86b7fe; /* Couleur de la bordure au focus */
+  outline: 0; /* Supprime la bordure focus par défaut */
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Ombre focus */
+}
+
+
+
+
+#nouveautes {
+  text-align: center; /* Centrer le texte */
+  margin-top: 50px; /* Ajouter de l'espace en haut pour l'esthétique */
+}
+
+#nouveautes h2 {
+  font-size: 2.5rem; /* Taille de police */
+  color: #333; /* Couleur du texte */
+  font-weight: bold; /* Gras */
+  text-transform: uppercase; /* Mettre le texte en majuscules */
+  letter-spacing: 2px; /* Espacement entre les lettres */
+}
