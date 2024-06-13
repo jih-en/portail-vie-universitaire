@@ -1,0 +1,1 @@
+C'est un projet novateur qui vise à créer une plateforme web intégrée, offrant aux étudiants un accès centralisé et intuitif à une variété d'informations cruciales pour simplifier et enrichir leur expérience universitaire.
